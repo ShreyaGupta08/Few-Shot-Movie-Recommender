@@ -1,16 +1,18 @@
-* MOVIE RECOMMENDER *
+# MOVIE RECOMMENDER
 
 This project provides a movie recommendation system based on user's top movie choices. Given a list of top movies, the system uses the OpenAI GPT API to generate movie recommendations tailored to the user's preferences.
 
-* Server *
+## Server
 The server code (server.py) is responsible for handling API requests and generating movie recommendations using the GPT API. It is built using Flask, a Python web framework.
 
-Dependencies
+### Dependencies
 Python 3.x
+
 Flask
+
 Requests
 
-Setup
+### Setup
 
 1. Make sure you are in the code directory by running the following:
 ```
@@ -41,7 +43,7 @@ $docker run -p 5000:5000 -e OPENAI_API_KEY -t movie_recommender
 
 The server will start running inside the Docker container on http://localhost:5000.
 
-* API Endpoint *
+## API Endpoint
 
 * /api/get_recommendation (POST): Accepts a JSON payload containing the user's top movies and returns a JSON response containing the movie recommendation. 
 
@@ -58,14 +60,17 @@ Respnse received:
 }
 ```
 
-* CLIENT *
+## CLIENT
 
 The client code (movie_reco_client.py) demonstrates how to send a request to the server and retrieve movie recommendations based on the user's top movies.
 
-** Dependencies **
+### Dependencies
 Python 3.x
+  
 Requests
 
+### Setup
+  
 1. Set the server IP and port in the client code (movie_reco_client.py) by updating the server_ip and port variables. (if you are running client and server on the same machine, this step is not needed).
 
 2. Now we are ready to get recommendations! In a new terminal, run the client code which will ask the server for movie predictions:
