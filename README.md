@@ -1,6 +1,6 @@
 # MOVIE RECOMMENDER
 
-This project provides a movie recommendation system based on user's top movie choices. Given a list of top movies, the system uses the OpenAI GPT API to generate movie recommendations tailored to the user's preferences.
+This project provides a movie recommendation system based on user's top movie choices. Given a list of top movies, the system uses the OpenAI GPT API to generate movie recommendations tailored to the user's preferences. The repository presents a production-ready code using flask API to create a server which hosts the model and makes the prediction whenever a client makes it a request. It also contains the dockerfile to run the code in a container.
 
 ## Server
 The server code (server.py) is responsible for handling API requests and generating movie recommendations using the GPT API. It is built using Flask, a Python web framework.
